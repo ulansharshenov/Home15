@@ -3,19 +3,28 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Person person = new Person("Ulan", "Java developer");
-        Person person2 = new Person("Urmat", "Hip hop dancer");
-        Person person3 = new Person("Maks", "Country singer");
 
-        Programmer programmer = new Programmer("Peaksoft");
-        Dancer dancer = new Dancer("KG_DANCE");
-        Singer singer = new Singer("B12");
+        Programmer programmer = new Programmer("Ulan", "Java developer", "Peaksoft");
+        Dancer dancer = new Dancer("Maks", "Hip-hop dancer", "KG_DANCE");
+        Singer singer = new Singer("Jenny", "Country singer", "B12");
 
-        System.out.print(person);
-        System.out.println(" at " + programmer);
-        System.out.print(person2);
-        System.out.println(" at " + dancer);
-        System.out.print(person3);
-        System.out.println(" at " + singer);
+        System.out.println(programmer);
+        programmer.coding();
+        programmer.learn();
+        programmer.walk();
+        programmer.eat();
+        System.out.println("********************");
+        System.out.println(dancer);
+        dancer.dancing();
+        programmer.learn();
+        programmer.walk();
+        programmer.eat();
+        System.out.println("********************");
+        System.out.println(singer);
+        singer.singing();
+        singer.playingGuitar();
+        programmer.learn();
+        programmer.walk();
+        programmer.eat();
     }
 }

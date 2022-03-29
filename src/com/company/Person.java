@@ -4,18 +4,7 @@ public class Person {
     private String name;
     private String designation;
 
-    public void learn(){
-        System.out.println(name + " is learning.");
-    }
-
-    public void walk(){
-        System.out.println(name + " is walking.");
-    }
-
-    public void eat(){
-        System.out.println(name + " is eating. ");
-    }
-    public Person(){
+    public Person() {
 
     }
 
@@ -24,9 +13,16 @@ public class Person {
         this.designation = designation;
     }
 
-    @Override
-    public String toString(){
-        return name + " is " + designation;
+    public void learn(){
+        System.out.println(this.name + " is learning.");
+    }
+
+    public void walk(){
+        System.out.println(this.name + " is walking.");
+    }
+
+    public void eat(){
+        System.out.println(this.name + " is eating. ");
     }
 
     public String getName() {
